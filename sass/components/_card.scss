@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    padding: $card-body-padding;
+  }
+
+  &[data-type="testimonial"] &__body {
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+      content: "\201C";
+
+      position: absolute;
+      top: -7rem;
+      left: 1rem;
+      z-index: -1;
+      font-family: $ff-accent;
+      font-size: 25rem;
+      opacity: 0.1;
+    }
+  }
+}

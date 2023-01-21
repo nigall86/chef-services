@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.heading-xl {
+  font-family: $ff-accent;
+  font-size: fs(900);
+  line-height: lh(110);
+}
+
+.heading-primary {
+  font-family: $ff-accent;
+  font-size: fs(800);
+  line-height: lh(110);
+}
+
+.subhead-primary {
+  font-family: $ff-base;
+  font-size: fs(600);
+  line-height: lh(120);
+  text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: fs(500);
+  font-weight: $fw-700;
+  line-height: lh(120);
+  text-transform: uppercase;
+}
